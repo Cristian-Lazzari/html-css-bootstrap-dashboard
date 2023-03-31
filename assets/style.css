@@ -1,7 +1,9 @@
 /* *****************
 ----SECTION NAME-(ALL)
 *********************/
-
+.text-color-y{
+    color: rgb(215, 190, 27);
+}
 /* *****************
 ----TOP_NAV
 *********************/
@@ -22,6 +24,14 @@
     justify-content: center;
     align-items: center;
 }
+@media screen and (max-width:768px) {
+    .fa-bell{
+        font-size: 3rem;
+    }
+    .small_logo{
+        max-width: 90%;
+    }
+}
 
 
 /* *****************
@@ -30,6 +40,31 @@
 /* *****************
 ----SIDE_BAR
 *********************/
+.side_bar{
+    height: 80vh;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-image: url('../img/sidebar-bg.png');
+    background-size: cover ;
+    
+}
+ul{
+    list-style: none;
+    padding-inline-start: 0!important;
+    margin:0!important;
+    margin-bottom:0!important;
+}
+ul .f_3{
+    margin-bottom: 2em;
+}
+.side_bar ul li span{
+    margin-left: 1em;
+}
+.w_1{
+    width: 1.5rem;
+    height: 1.5rem;
+}
 /* *****************
 ----MAIN
 *********************/
