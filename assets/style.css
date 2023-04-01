@@ -4,6 +4,10 @@
 .text-color-y{
     color: rgb(215, 190, 27);
 }
+ul{
+    list-style: none;
+    padding-inline-start: 0!important;
+}
 /* *****************
 ----TOP_NAV
 *********************/
@@ -42,28 +46,52 @@
 *********************/
 .side_bar{
     height: 80vh;
+    width: 150px;
     position: fixed;
     bottom: 0;
     left: 0;
     background-image: url('../img/sidebar-bg.png');
     background-size: cover ;
-    
+    background-color: #051F34;
+    color: white;
+    padding: 1rem;
 }
-ul{
-    list-style: none;
-    padding-inline-start: 0!important;
-    margin:0!important;
-    margin-bottom:0!important;
+.side_bar ul{
+    display: flex;
+    height: 100%;
+
+    flex-direction: column;
 }
-ul .f_3{
-    margin-bottom: 2em;
+.side_bar ul li{
+    display: flex;
+    align-items:center;
+    justify-content:start;
 }
-.side_bar ul li span{
-    margin-left: 1em;
+.last_1{
+    height: 100%;
+    align-items: flex-start!important;
 }
 .w_1{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.5rem!important;
+    height: 1.5rem!important;
+    /* background-color: antiquewhite; */
+}
+.side_bar span{
+    margin-left: 1em;
+}
+@media screen and (max-width:568px){ /****IMPORTANT CHECK***/
+    .side_bar{
+        width: 60px;
+    }
+   
+    
+    .side_bar i{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .side_bar span{
+        display: none;
+    }
 }
 /* *****************
 ----MAIN
