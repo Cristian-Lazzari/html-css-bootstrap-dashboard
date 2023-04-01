@@ -29,8 +29,11 @@ ul{
     align-items: center;
 }
 @media screen and (max-width:768px) {
+    .top_nav{
+        height: 18vh!important;
+    }
     .fa-bell{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .small_logo{
         max-width: 90%;
@@ -38,9 +41,7 @@ ul{
 }
 
 
-/* *****************
-----HEADER
-*********************/
+
 /* *****************
 ----SIDE_BAR
 *********************/
@@ -79,9 +80,10 @@ ul{
 .side_bar span{
     margin-left: 1em;
 }
-@media screen and (max-width:568px){ /****IMPORTANT CHECK***/
+@media screen and (max-width:768px){ /****IMPORTANT CHECK***/
     .side_bar{
         width: 60px;
+        height: 82vh;
     }
    
     
@@ -93,6 +95,55 @@ ul{
         display: none;
     }
 }
+
 /* *****************
 ----MAIN
 *********************/
+main{
+    width: calc(100% - 150px);
+    height: 80vh;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+.table tr th:first-child{
+    width: 60%;
+}
+.table tr img{
+    border-radius: 50%;
+    height: 30px;
+    margin-right: .6em;
+}
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    main{
+        width: calc(100% - 60px);
+        height: 82vh;
+    }
+    .d_none{
+        display: none;
+    }
+}
+@media screen and (max-width:580px) {
+   
+    .d_none_1{
+        display: none;
+    }
+}
+/* *****************
+----HEADER
+*********************/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 1rem 2rem 1rem .3rem;
+    background-color: #1B72E8;
+    color: white;
+}
